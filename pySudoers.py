@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 """
-Author: Tim McGlothin <tmcglothin@llbean.com>
+Author: Tim McGlothin <timmcg@gmail.com>
 Date: 2023-05-10
 
 This script processes the /etc/sudoers file on a Unix/Linux system. It creates individual files in 
@@ -40,7 +40,7 @@ import datetime
 
 # Regular expression to match user or group rules in sudoers file
 rule_regex = re.compile(
-    r"^(\%?[a-z_][a-z0-9_\-]*)\s+ALL=\(ALL\)(\:ALL)?(\s+NOPASSWD\: ALL)?(\s+.*)?$")
+    r"^(\%?[a-zA-Z_][a-zA-Z0-9_\-]*)\s+ALL=\(ALL\)(\:ALL)?(\s+NOPASSWD\: ALL)?(\s+.*)?$")
 
 # ANSI color codes
 
